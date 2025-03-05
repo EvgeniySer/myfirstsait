@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url("assets/фон.png");
+    background-position: center;
+    /* Центрируем изображение */
+    background-repeat: no-repeat;
+    /* Запрещаем повторение изображения */
+    background-attachment: fixed;
+    /* Фиксируем изображение */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+
+    /* Обрезает изображение, сохраняя пропорции */
+    object-position: center;
+    /* Центрирует изображение в контейнере */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    text-align: center;
+    
+}
+
+.login-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.organizations {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.organization {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    min-height: 500px;
+    max-height: 500px;
+
+
+}
+
+.organization img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    /* Обрезает изображение, сохраняя пропорции */
+    object-position: center;
+    /* Центрирует изображение в контейнере */
+}
+
+.organization h2 {
+    position: absolute;
+    /* Абсолютное позиционирование */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+    /* Текст поверх изображения */
+    margin-top: -10%;
+    /* Сдвигаем вниз на 25% от высоты контейнера */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0)
+}
+
+.voting-results {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#results-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+p {
+    font-size: 20px;
+    text-indent: 30px;
+    /* Отступ первой строки */
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.organization-details {
+    display: grid;
+
+    text-align: left;
+}
+
+.organization-details img {
+    max-width: 600px;
+    min-width: 600px;
+    /* Изображение не будет превышать ширину своего контейнера */
+    height: auto;
+    /* Сохраняет пропорции изображения */
+    display: block;
+    margin-left: 20%;
+}
+
+.organization-details li {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.organization-details h2 {
+    text-indent: 30px;
+    /* Отступ первой строки */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.organization-details h1 {
+    text-align: center;
+}
+
+#auth-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Распределяет элементы по краям */
+
+    gap: 10px;
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    background-color: #cc0000;
+}
+
+#login-form {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+
+/* Стили для кнопки "Посмотреть результат" */
+.results-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.results-button:hover {
+    background-color: #777;
+}
+
+/* Стили для формы ввода пароля */
+#password-form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#password-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#submit-password {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-password:hover {
+    background-color: #777;
+}
